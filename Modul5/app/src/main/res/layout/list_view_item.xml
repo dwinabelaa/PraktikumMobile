@@ -31,8 +31,7 @@
             android:textSize="18sp"
             android:text="@{provinsi.name}"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Judul disini" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
     </com.google.android.material.card.MaterialCardView>
 </layout>

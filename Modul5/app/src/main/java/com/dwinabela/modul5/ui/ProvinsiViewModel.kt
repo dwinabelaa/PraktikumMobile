@@ -5,9 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.dwinabela.modul5.network.Prov
 import com.dwinabela.modul5.network.Province
-import com.dwinabela.modul5.network.Provinsi
 import com.dwinabela.modul5.network.ProvinsiApi
 import kotlinx.coroutines.launch
 
@@ -20,10 +18,8 @@ class ProvinsiViewModel : ViewModel() {
 
     fun getProvinsi() {
         viewModelScope.launch {
-//            _provinsi.value = ProvinsiApi.retrofitServiceApi.getData()
             try {
                 _provinsi.value = ProvinsiApi.retrofitServiceApi.getData()
-//                _provinsi.value = ProvinsiApi.retrofitServiceApi.getDataBaru("https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json")
                 Log.d("berhasil",province.value.toString())
             }catch (e: Exception){
                 _provinsi.value = listOf(Province(1,"gagal"))

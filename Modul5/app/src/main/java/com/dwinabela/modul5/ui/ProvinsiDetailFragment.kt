@@ -5,17 +5,14 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.dwinabela.modul5.R
 import com.dwinabela.modul5.databinding.FragmentProvinsiDetailBinding
 
-
 class ProvinsiDetailFragment : Fragment() {
     private val viewModel: ProvinsiViewModel by activityViewModels()
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -24,15 +21,12 @@ class ProvinsiDetailFragment : Fragment() {
         val binding = FragmentProvinsiDetailBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
-
-//        (activity as AppCompatActivity).supportActionBar?.title = ""
         return binding.root
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

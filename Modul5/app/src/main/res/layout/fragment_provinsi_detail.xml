@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="viewModel"
             type="com.dwinabela.modul5.ui.ProvinsiViewModel" />
@@ -22,8 +21,7 @@
             android:text="@{Integer.toString(viewModel.provinsiTunggal.id)}"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Bunga yang Indah sekali" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/title"
@@ -33,7 +31,6 @@
             android:text="@{viewModel.provinsiTunggal.name}"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/id"
-            tools:text="Bunga yang Indah sekali" />
+            app:layout_constraintTop_toBottomOf="@+id/id" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

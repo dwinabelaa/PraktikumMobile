@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.dwinabela.modul5.R
-import com.dwinabela.modul5.databinding.FragmentProvinsiDetailBindingImpl
 import com.dwinabela.modul5.databinding.FragmentProvinsiListBinding
 
 class ProvinsiListFragment: Fragment() {
@@ -19,7 +18,6 @@ class ProvinsiListFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = FragmentProvinsiListBinding.inflate(inflater)
-//        val binding = FragmentProvinsiDetailBindingImpl.inflate(inflater)
         myViewModel.getProvinsi()
         binding.lifecycleOwner = this
         binding.data = myViewModel
@@ -28,7 +26,6 @@ class ProvinsiListFragment: Fragment() {
             findNavController()
                 .navigate(R.id.action_provinsiListFragment_to_provinsiDetailFragment)
         })
-
         return binding.root
     }
 }

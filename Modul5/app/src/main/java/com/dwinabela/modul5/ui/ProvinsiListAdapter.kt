@@ -6,9 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.ListAdapter
 import com.dwinabela.modul5.databinding.ListViewItemBinding
-import com.dwinabela.modul5.network.Prov
 import com.dwinabela.modul5.network.Province
-import com.dwinabela.modul5.network.Provinsi
 
 class ProvinsiListAdapter(private val clickListener: ProvinsiListener) :
     ListAdapter<Province, ProvinsiListAdapter.ProvinsiViewHolder>(DiffCallback)
