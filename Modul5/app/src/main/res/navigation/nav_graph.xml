@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/provinsiListFragment">
+
+    <fragment
+        android:id="@+id/provinsiListFragment"
+        android:name="com.dwinabela.modul5.ui.ProvinsiListFragment"
+        android:label="ProvinsiListFragment" >
+        <action
+            android:id="@+id/action_provinsiListFragment_to_provinsiDetailFragment"
+            app:destination="@id/provinsiDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/provinsiDetailFragment"
+        android:name="com.dwinabela.modul5.ui.ProvinsiDetailFragment"
+        android:label="ProvinsiDetailFragment" >
+        <action
+            android:id="@+id/action_provinsiDetailFragment_to_provinsiListFragment"
+            app:destination="@id/provinsiListFragment" />
+    </fragment>
+</navigation>
