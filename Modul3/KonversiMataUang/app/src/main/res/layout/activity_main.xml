@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/teks_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="@string/nilai_mata_uang"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintStart_toEndOf="@+id/icon_konversi"
+            app:layout_constraintTop_toBottomOf="@+id/pilihan_mata_uang">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text"
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/icon_mata_uang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/teks_pilih_mata_uang"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/teks_pilih_mata_uang"
+            app:srcCompat="@drawable/ic_monetization" />
+
+        <TextView
+            android:id="@+id/teks_pilih_mata_uang"
+            style="@style/Widget.KonversiMataUang.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/pilih_mata_uang"
+            app:layout_constraintStart_toEndOf="@+id/icon_mata_uang"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/pilihan_mata_uang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:checkedButton="@id/euro"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/teks_pilih_mata_uang"
+            app:layout_constraintTop_toBottomOf="@+id/teks_pilih_mata_uang">
+
+            <RadioButton
+                android:id="@+id/euro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/euro" />
+
+            <RadioButton
+                android:id="@+id/USDollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/us_dollar" />
+
+            <RadioButton
+                android:id="@+id/japaneseYen"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="@string/japanese_yen" />
+
+            <RadioButton
+                android:id="@+id/saudiRiyal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saudi_riyal" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/icon_konversi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/teks_input_layout"
+            app:layout_constraintEnd_toStartOf="@+id/teks_input_layout"
+            app:layout_constraintTop_toTopOf="@+id/teks_input_layout"
+            app:srcCompat="@drawable/ic_arrows" />
+
+
+        <Button
+            android:id="@+id/tombol_konversi"
+            android:layout_width="303dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="38dp"
+            android:text="@string/konversi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teks_input_layout"
+            app:rippleColor="#F44336" />
+
+        <TextView
+            android:id="@+id/teks_hasil"
+            style="@style/Widget.KonversiMataUang.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tombol_konversi" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
