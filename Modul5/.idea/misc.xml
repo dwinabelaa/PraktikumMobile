@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ULM/Pemrograman Mobile/PraktikumMobile/Modul5/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/ULM/Pemrograman Mobile/PraktikumMobile/Modul5/app/src/main/res/layout/fragment_provinsi_detail.xml" value="0.1" />
-        <entry key="..\:/ULM/Pemrograman Mobile/PraktikumMobile/Modul5/app/src/main/res/layout/fragment_provinsi_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/ULM/Pemrograman Mobile/PraktikumMobile/Modul5/app/src/main/res/layout/fragment_provinsi_list.xml" value="0.1" />
         <entry key="..\:/ULM/Pemrograman Mobile/PraktikumMobile/Modul5/app/src/main/res/layout/list_view_item.xml" value="0.1" />
         <entry key="..\:/Users/dwina/StudioProjects/praktikummobile2/modul5/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/dwina/StudioProjects/praktikummobile2/modul5/app/src/main/res/layout/fragment_provinsi_detail.xml" value="0.16" />

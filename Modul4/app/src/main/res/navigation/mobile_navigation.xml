@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.modul4.router.ui.Home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_router_hardware"
+        android:name="com.modul4.router.ui.RHardware.RHardwareFragment"
+        android:label="@string/menu_router_hardware"
+        tools:layout="@layout/fragment_hardware" />
+
+    <fragment
+        android:id="@+id/nav_router_software"
+        android:name="com.modul4.router.ui.RSoftware.RSoftwareFragment"
+        android:label="@string/menu_router_software"
+        tools:layout="@layout/fragment_software" />
+
+    <fragment
+        android:id="@+id/nav_topology"
+        android:name="com.modul4.router.ui.Topology.TopologyFragment"
+        android:label="@string/topology"
+        tools:layout="@layout/fragment_topology" />
+</navigation>

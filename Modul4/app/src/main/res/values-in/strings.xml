@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Router</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Router dan Topologi</string>
+    <string name="nav_header_subtitle">2010817120009</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="toast">Mengklik item no. </string>
+
+    <string name="menu_home">Beranda</string>
+    <string name="menu_router_hardware">Router Hardware</string>
+    <string name="menu_router_software">Router Software</string>
+    <string name="topology">Topology</string>
+
+    <string name="topologi_ring">Topology Ring</string>
+    <string name="topologi_mesh">Topology Mesh</string>
+    <string name="topologi_bus">Topology Bus</string>
+    <string name="topologi_star">Topology Star</string>
+    <string name="topologi_tree">Topology Tree</string>
+
+    <string name="cisco">Cisco</string>
+    <string name="mikrotik">Mikrotik</string>
+    <string name="tp_link">TP_Link</string>
+
+    <string name="linux">Linux</string>
+    <string name="macos">Mac OS</string>
+    <string name="windows">Windows</string>
+    <string name="welcome">Selamat Datang</string>
+</resources>
